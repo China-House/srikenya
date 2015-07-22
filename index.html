@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
+    <meta name="description" content=""/>
+    <meta name="author" content="" />
     <title>中国在肯负责任投资线上倡导平台</title>
-
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
+    <link href="css/modern-business.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -24,20 +20,38 @@
   </head>
 
   <body>
-
     <div id="header"> </div>  
+    <div id="content" class="container"></div>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/react-with-addons.min.js"></script>
+    <script src="js/JSXTransformer.js"></script>
+
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+    <script type="text/jsx" src="js/react/Header.js"></script>
+    <script type="text/jsx" src="js/react/Slide.js"></script>
+    <script type="text/jsx" src="js/react/Content.js"></script>
+  </body>
+</html>
+
+    <!-- <div id="carousel"> </div>  -->
     <!-- Navigation -->
-    <!-- Header Carousel -->
+    <!-- Header Carousel 
     <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
+        
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
-        <!-- Wrapper for slides -->
+        
         <div class="carousel-inner">
             <div class="item active">
                 <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
@@ -59,7 +73,7 @@
             </div>
         </div>
 
-        <!-- Controls -->
+        
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
         </a>
@@ -67,189 +81,4 @@
             <span class="icon-next"></span>
         </a>
     </header>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Home Page, introducing all three sections; provide clicks to link to other stuff -->
-        <!-- News section, make it into a slidable panels, which expand into a floating details news upon clicks --> 
-        <div class="row">
-          <div class="col-md-4">  
-
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    新闻
-                </h1>
-            </div>
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> 创业板单日涨幅超过30%</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">详细</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> 希望号台风袭击东非海岸</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">详细</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> ATC大赛进入白热化阶段</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">详细</a>
-                    </div>
-                </div>
-            </div>
-          </div>
-
-
-  <!-- Articles from Columnists -->
-          <!-- provide a brief list of articles?  -->
-          <div class="col-md-8">  
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header">专栏</h2>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="content/img/750x450.htm" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="content/img/750x450.htm" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="content/img/750x450.htm" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="content/img/750x450.htm" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="content/img/750x450.htm" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-portfolio img-hover" src="content/img/750x450.htm" alt="">
-                    </a>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <!-- 项目 -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header">项目</h2>
-                </div>
-              <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-check"></i> 创业板单日涨幅超过30%</h4>
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">详细</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-gift"></i> 希望号台风袭击东非海岸</h4>
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">详细</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-compass"></i> ATC大赛进入白热化阶段</h4>
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">详细</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.row -->
-          </div>
-
-        </div>
-        <!-- /.row -->
-
-        
-
-        <hr>
-
-        <!-- Call to Action Section -->
-        <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>版权 &copy; 中南屋</p>
-                    <p>Design and development by Hao Wan </p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- react compnent -->
-    <script src="js/react-with-addons.min.js"></script>
-    <script src="js/JSXTransformer.js"></script>
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-
-    <script type="text/jsx" src="js/react/Header.js"></script>
-  
-  </body>
-</html>
+    -->

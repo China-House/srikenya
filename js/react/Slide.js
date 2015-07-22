@@ -1,12 +1,9 @@
 
-
-
 var Slide = React.createClass({
   render: function() {
     var divStyle = {backgroundImage: 'url(http://placehold.it/1900x1080&text=Slide One)'};
     return (
         <header id="myCarousel" className="carousel slide">
-    
             <ol className="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -34,7 +31,6 @@ var Slide = React.createClass({
                 </div>
             </div>
 
-
             <a className="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span className="icon-prev"></span>
             </a>
@@ -45,11 +41,10 @@ var Slide = React.createClass({
     );
   }
 });
-// React.render(
-//   <Slide />,
-//   //document.body
-//   document.getElementById('slide')
-// );
 
+React.render(
+  <Slide />,
+  // document.body
+  document.getElementById('carousel')
+);
 
-module.exports = Slide;
