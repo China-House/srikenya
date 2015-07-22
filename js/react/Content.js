@@ -80,7 +80,7 @@ var Columnists = React.createClass({
     var columnistsNodes = this.state.data.map(function(columnists) {
       return (
         <div className="col-md-4 col-sm-6">
-            <a href="portfolio-item.html">
+            <a href="#">
                 <img className="img-responsive img-portfolio img-hover" src="content/img/750x450.htm" alt="" />
             </a>
         </div>
@@ -167,7 +167,10 @@ var Content = React.createClass({
         <div className="well">
             <div className="row">
                 <div className="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    <p>联系方式：</p>
+                    <ul>Email: xxx@znw.com</ul>
+                    <ul>Call: 1728393912</ul>
+                    <ul>地址: asdfkjzk</ul>
                 </div>
                 <div className="col-md-4">
                     <a className="btn btn-lg btn-default btn-block" href="#">Call to Action</a>

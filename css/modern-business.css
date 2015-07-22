@@ -24,9 +24,8 @@ body {
 }
 
 /* Home Page Carousel */
-
 header.carousel {
-    height: 50%;
+    height: 40vh;
 }
 
 header.carousel .item,

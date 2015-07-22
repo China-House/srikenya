@@ -8,25 +8,36 @@ var Slide = React.createClass({
                 <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>
 
             <div className="carousel-inner">
                 <div className="item active">
-                    <div className="fill" style={{backgroundImage: 'url(http://placehold.it/1900x1080&text=Slide One)'}}></div>
+                    <div className="fill" style={{backgroundImage: 'url(./content/img/6.jpg)'}}></div>
                     <div className="carousel-caption">
-                        <h2>海报一</h2>
+                        
                     </div>
                 </div>
                 <div className="item">
-                    <div className="fill" style={divStyle}></div>
+                    <div className="fill" style={{backgroundImage: 'url(./content/img/2.jpg)'}}></div>
                     <div className="carousel-caption">
-                        <h2>海报二</h2>
+                        
                     </div>
                 </div>
                 <div className="item">
-                    <div className="fill" style={divStyle}></div>
+                    <div className="fill" style={{backgroundImage: 'url(./content/img/3.jpg)'}}></div>
                     <div className="carousel-caption">
-                        <h2>海报三</h2>
+                    </div>
+                </div>
+                <div className="item">
+                    <div className="fill" style={{backgroundImage: 'url(./content/img/4.jpeg)'}}></div>
+                    <div className="carousel-caption">
+                    </div>
+                </div>
+                <div className="item">
+                    <div className="fill" style={{backgroundImage: 'url(./content/img/7.jpg)'}}></div>
+                    <div className="carousel-caption">
                     </div>
                 </div>
             </div>

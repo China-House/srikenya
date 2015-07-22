@@ -10,19 +10,19 @@ var Header = React.createClass({
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul className="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">新闻</a>
+                        <a href="#">新闻</a>
                     </li>
                     <li>
-                        <a href="services.html">专栏</a>
+                        <a href="#">专栏</a>
                     </li>
                     <li>
-                        <a href="contact.html">项目</a>
+                        <a href="#">项目</a>
                     </li>
                     <li>
-                        <a href="about.html">关于</a>
+                        <a href="#">关于</a>
                     </li>
                     <li>
-                        <a href="contact.html">联系方式</a>
+                        <a href="#">联系方式</a>
                     </li>
                 </ul>
             </div>
@@ -32,8 +32,9 @@ var Header = React.createClass({
   }
 });
 
+
 React.render(
-  <Header />,
+  <Header></Header>,
   document.getElementById('header')
 );
 
