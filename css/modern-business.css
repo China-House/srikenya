@@ -90,3 +90,9 @@ footer {
         height: 70%;
     }
 }
+
+/* Newly Added */
+.panel {
+    height: 250px;
+    overflow: auto;
+}

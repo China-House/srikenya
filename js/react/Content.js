@@ -24,8 +24,13 @@ var News = React.createClass({
     setInterval(this.loadFromServer, this.props.pollInterval);
   },
 
+  handleClick: function(i, text) {
+    alert(text);
+  },
+
 	render: function() {
-    var newsNodes = this.state.data.map(function(news) {
+    var self=this;
+    var newsNodes = this.state.data.map(function(news, i) {
       return (
           <div className="col-md-12">
               <div className="panel panel-default">
@@ -33,8 +38,8 @@ var News = React.createClass({
                       <h4> {news.title} </h4>
                   </div>
                   <div className="panel-body">
-                      <p>{news.text} </p>
-                      <a href="#" className="btn btn-default">详细</a>
+                      <p>{news.brief} </p>
+                      <a onClick={self.handleClick.bind(this, i, news.text)} href="#" className="btn btn-default">详细</a>
                   </div>
               </div>
           </div>
@@ -44,7 +49,7 @@ var News = React.createClass({
              <div className="col-lg-12">
                 <h1 className="page-header"> 新闻 </h1>
              </div>
-            {newsNodes}
+             {newsNodes}
            </div>);
   }
 });
